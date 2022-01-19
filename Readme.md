@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Яценко](https://up.htmlacademy.ru/htmlcss/33/user/1975777).
+* Наставник: [Владислав Зубко](https://htmlacademy.ru/profile/whatislove).
 
 ---
 
