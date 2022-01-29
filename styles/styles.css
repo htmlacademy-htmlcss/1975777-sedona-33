@@ -67,6 +67,7 @@ body {
   background-image: url("/images/index-background.jpg");
 }
 
+/*блог информации*/
 .info {
   text-align: center;
   text-decoration: none;
@@ -97,11 +98,15 @@ body {
   font-weight: 700;
 }
 
+/*блог сервиса*/
 .services-list {
   text-align: center;
   background-color: #83b3d31f;
   color: #000000;
   text-decoration: none;
+}
+.services-list li:nth-child(2){
+  background-color: #ffffff;
 }
 .services-title {
   font-size: 24px;
@@ -109,7 +114,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-/*не работает фон*/
+
+/**/
 .info-email{
     color:#ffffff;
     background-color: black;
