@@ -34,7 +34,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #242424;
-  background-color: #fbf7f4;
+  background-color: #F2F2F2;
+
 }
 /*НЕ РАБОТАЕТ фон*/
 button {
@@ -70,9 +71,11 @@ button {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("images/index-background.jpg");
+  background-image: url(/images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .info {
