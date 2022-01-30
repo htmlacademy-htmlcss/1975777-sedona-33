@@ -18,9 +18,10 @@ body {
   font-family: "PT-Sants", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #242424; 
-  background-color: #E5E5E5;
-
+  color: #242424;
+  background-color: #e5e5e5;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /*Кнопки*/
@@ -58,13 +59,11 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  width: 1200px;
-  margin: 0 auto;
   text-align: center;
 }
 
 /*Добавляет фон блоку с логотипом*/
-.info-page{
+.info-page {
   background-image: url("/images/index-background.jpg");
   background-color: #ffffff;
   background-size: 100% auto;
@@ -80,7 +79,7 @@ body {
 
 .info-description {
   font-size: 22px;
-  line-height: 36px;  
+  line-height: 36px;
   font-weight: 400;
 }
 
@@ -103,11 +102,11 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
-.background-white{
+.background-white {
   background-color: #ffffff;
 }
 
-.background-blue{
+.background-blue {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .services-title {
@@ -117,49 +116,105 @@ body {
   text-transform: uppercase;
 }
 
-.info-hotel{
+.info-hotel {
   text-align: center;
   background-color: #ffffff;
 }
 /*Блог подписки*/
-.info-email{
-  color:#ffffff;
+.info-email {
+  color: #ffffff;
   background-color: #000000;
   background-image: url("/images/background-footer.jpg");
-  background-size: 100% auto; 
+  background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
 }
-.info-email-title{
+.info-email-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.info-email-description{
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
+.info-email-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 /*Стили для подвала*/
-.page-footer{
+.page-footer {
   background-color: #ffffff;
 }
-.footer-social{
+.footer-social {
   text-align: center;
 }
-.footer-phone{
+.footer-phone {
   text-align: center;
   font-size: 40px;
-  line-height: 40px;  
+  line-height: 40px;
   font-weight: 400;
 }
-.footer-phone a{
- text-decoration: none; 
- color: #000000
+.footer-phone a {
+  text-decoration: none;
+  color: #000000;
 }
-.footer-htmlacademy{
+.footer-htmlacademy {
   text-align: center;
 }
 
+/*Каталог*/
+.main-inner {
+  color: #000000;
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filter-blog {
+  background-image: url("/images/catalog-background.jpg");
+  background-color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77, 64px;
+  text-align: left;
+  color: #ffffff;
+}
+.breadcrumbs {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20, 7px;
+  color: #ffffff;
+}
+.catalog-filter-group {
+  text-align: center;
+  color: #ffffff;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25,88px;
+}
+.infastructure-input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23,29px;
+}
+.type-home-input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23, 29px;
+}
+.catalog-filter{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20,7px;  
+}
+.button-blue{
+  background-color: #83B3D3;
+}
