@@ -15,62 +15,60 @@
 }
 
 body {
-  font-family: "PT-Sants";
+  font-family: "PT-Sants", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #242424;
-  background-color: #F2F2F2;
+  color: #242424; 
+  background-color: #E5E5E5;
 
 }
 
+/*Кнопки*/
 .button {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    background-color: #756257;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756257;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
 }
-
 
 /*Шапка*/
 .page-header {
   color: #000000;
   background-color: #fbf7f4;
 }
-/*навигация*/
+
+/*Навигация*/
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
   font-weight: 700;
   text-align: center;
-  background-color: #fbf7f4;
+  background-color: #ffffff;
   text-decoration: none;
   text-transform: none;
 }
 
-/**/
+/*Стили для основного блока*/
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-.welcome-page{
-  background-image: url("/images/index-background.jpg");
-}
 
-/*блог информации*/
-.info {
-  text-align: center;
-  text-decoration: none;
+/*Добавляет фон блоку с логотипом*/
+.info-page{
+  background-image: url("/images/index-background.jpg");
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .info-title {
@@ -79,17 +77,18 @@ body {
   font-weight: 700;
   line-height: 36px;
 }
+
 .info-description {
   font-size: 22px;
-  line-height: 26px;
-  text-transform: none;
+  line-height: 36px;  
+  font-weight: 400;
 }
 
+/*Блог преимуществ*/
 .advantages-list {
   text-align: center;
   background-color: #83b3d3;
   color: #ffffff;
-  text-decoration: none;
 }
 .advantages-title {
   font-size: 24px;
@@ -98,15 +97,18 @@ body {
   font-weight: 700;
 }
 
-/*блог сервиса*/
-.services-list {
+/*Блог сервиса*/
+.services-item {
   text-align: center;
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
-  text-decoration: none;
 }
-.services-list li:nth-child(2){
+.background-white{
   background-color: #ffffff;
+}
+
+.background-blue{
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .services-title {
   font-size: 24px;
@@ -115,24 +117,49 @@ body {
   text-transform: uppercase;
 }
 
-/**/
+.info-hotel{
+  text-align: center;
+  background-color: #ffffff;
+}
+/*Блог подписки*/
 .info-email{
-    color:#ffffff;
-    background-color: black;
-    background-image: url("/images/background-footer.jpg");
-    text-align: center;
+  color:#ffffff;
+  background-color: #000000;
+  background-image: url("/images/background-footer.jpg");
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  text-align: center;
 }
 .info-email-title{
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .info-email-description{
     font-size: 22px;
     line-height: 26px;
-    text-decoration: none;
+    font-weight: 400;
 }
 
+/*Стили для подвала*/
+.page-footer{
+  background-color: #ffffff;
+}
+.footer-social{
+  text-align: center;
+}
+.footer-phone{
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;  
+  font-weight: 400;
+}
+.footer-phone a{
+ text-decoration: none; 
+ color: #000000
+}
+.footer-htmlacademy{
+  text-align: center;
+}
 
