@@ -284,7 +284,7 @@ body {
 .mode-control {
   text-align: center;
 }
-/*подчеркивается, наследует отступ от боди????????????????*/
+/*подчеркивание как ссылка*/
 .product-card-title {
   font-size: 24px;
   font-weight: 700;
@@ -306,19 +306,28 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  color:#ffffff;
+  color: #ffffff;
   background-color: #83b3d3;
 }
-.button-pagination-link-no-active{
+.button-pagination-link-no-active {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
-.pagination-link {
-  text-align: center;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  
-  background-color:#83B3D3;
+.hotel-on-page {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+.hotel-on-page-list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
 
+.info-email-catalog{
+  background-image: none;
+  background-color: #ffffff;
+  color: #000000;
 }
