@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
 }
 
-/*Кнопки*/
+/*Кнопки
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -35,7 +35,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-}
+}*/
 
 /*Шапка*/
 .page-header {
@@ -53,6 +53,14 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: none;
+}
+.button-navigation {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756257;
+  text-transform: uppercase;
 }
 
 /*Стили для основного блока*/
@@ -140,6 +148,16 @@ body {
   line-height: 26px;
   font-weight: 400;
 }
+.button-hotel {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 /*Стили для подвала*/
 .page-footer {
@@ -200,6 +218,7 @@ body {
   font-weight: 700;
   line-height: 25, 88px;
 }
+
 .infastructure-input {
   font-size: 18px;
   font-weight: 400;
@@ -215,10 +234,29 @@ body {
   font-weight: 700;
   line-height: 20, 7px;
 }
-.button-blue {
-  background-color: #83b3d3;
+
+/*кнопки для каталога*/
+.button-catalog {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
 }
+.button-blue {
+  background-color: #83b3d3;
+}
+.button-brown {
+  background-color:#756257;
+}
+.button-grey {
+  font-weight: 400;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+/*сбросить*/
 .delete {
   font-size: 18px;
   font-weight: 400;
@@ -247,11 +285,7 @@ body {
   text-align: center;
 }
 
-/*Карточки каталога*/
-.product-card a {
-  text-decoration: none;
-  color: #000000;
-}
+
 .product-card-title {
   font-size: 18px;
   font-weight: 700;
@@ -262,13 +296,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
-  text-align: left;
-  color: #ffffff;
-}
-.button-grey {
-  background-color: #f2f2f2;
   color: #000000;
 }
+
 
 /*Панагация*/
 .pagination-show-more {
