@@ -284,8 +284,8 @@ body {
 .mode-control {
   text-align: center;
 }
-/*подчеркивание как ссылка*/
-.product-card-title {
+
+.product-card-link {
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;
