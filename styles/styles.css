@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT-Sants", sans-serif;
+  font-family: "PT-Sants", "Aria", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #242424;
@@ -23,19 +23,6 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
-/*Кнопки 
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756257;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-}*/
 
 /*Шапка*/
 .page-header {
@@ -54,6 +41,7 @@ body {
   text-decoration: none;
   text-transform: none;
 }
+
 .button-navigation {
   font-size: 16px;
   font-weight: 700;
@@ -97,6 +85,7 @@ body {
   background-color: #83b3d3;
   color: #ffffff;
 }
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -110,6 +99,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
+
 .background-white {
   background-color: #ffffff;
 }
@@ -117,6 +107,7 @@ body {
 .background-blue {
   background-color: rgba(131, 179, 211, 0.2);
 }
+
 .services-title {
   font-size: 24px;
   line-height: 28px;
@@ -128,6 +119,7 @@ body {
   text-align: center;
   background-color: #ffffff;
 }
+
 /*Блог подписки*/
 .info-email {
   color: #ffffff;
@@ -137,17 +129,20 @@ body {
   background-repeat: no-repeat;
   text-align: center;
 }
+
 .info-email-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .info-email-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
+
 .button-hotel {
   font-size: 20px;
   font-weight: 700;
@@ -163,19 +158,23 @@ body {
 .page-footer {
   background-color: #ffffff;
 }
+
 .footer-social {
   text-align: center;
 }
+
 .footer-phone {
   text-align: center;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
 }
+
 .footer-phone a {
   text-decoration: none;
   color: #000000;
 }
+
 .footer-htmlacademy {
   text-align: center;
 }
@@ -195,6 +194,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
@@ -202,6 +202,7 @@ body {
   text-align: left;
   color: #ffffff;
 }
+
 .breadcrumbs {
   text-align: left;
   font-size: 16px;
@@ -209,10 +210,12 @@ body {
   line-height: 21px;
   color: #ffffff;
 }
+
 .catalog-filter-group {
   text-align: center;
   color: #ffffff;
 }
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -224,11 +227,13 @@ body {
   font-weight: 400;
   line-height: 23px;
 }
+
 .type-home-input {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
 }
+
 .catalog-filter {
   font-size: 16px;
   font-weight: 700;
@@ -245,17 +250,21 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
 .button-blue {
   background-color: #83b3d3;
 }
+
 .button-brown {
   background-color: #756257;
 }
+
 .button-grey {
   font-weight: 400;
   background-color: #f2f2f2;
   color: #000000;
 }
+
 /*сбросить*/
 .delete {
   font-size: 18px;
@@ -274,6 +283,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+
 .select-control {
   font-size: 18px;
   font-weight: 400;
@@ -281,6 +291,7 @@ body {
   text-align: left;
   color: #333333;
 }
+
 .mode-control {
   text-align: center;
 }
@@ -293,6 +304,7 @@ body {
   color: #000000;
   text-transform: none;
 }
+
 .product-card p {
   font-size: 18px;
   font-weight: 400;
@@ -309,16 +321,19 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
 }
+
 .button-pagination-link-no-active {
   color: #000000;
   background-color: #f2f2f2;
 }
+
 .hotel-on-page {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
 }
+
 .hotel-on-page-list {
   font-size: 18px;
   font-weight: 400;
