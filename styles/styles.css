@@ -14,7 +14,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0; /*флекс*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   font-family: "PT-Sants", "Aria", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -22,12 +31,39 @@ body {
   background-color: #e5e5e5;
   width: 1200px;
   margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 /*Шапка*/
 .page-header {
   color: #000000;
   background-color: #fbf7f4;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+ }
+
+ .navigation-logo{
+   width: 139px;
+ }
+
+.navigation-menu{
+  width: 345px;
+}
+
+.navigation-user{
+  max-width: 300px;
+  margin-left: auto;
 }
 
 /*Навигация*/
@@ -56,6 +92,10 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-align: center;
+}
+
+.main-conteiner {
+  flex-grow: 1;
 }
 
 /*Добавляет фон блоку с логотипом*/
