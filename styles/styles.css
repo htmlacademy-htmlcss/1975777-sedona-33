@@ -41,32 +41,34 @@ body {
   color: #000000;
   background-color: #fbf7f4;
 }
-
+/*Навигация*/
 .navigation {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
-.navigation-list{
+.navigation-list {
   margin: 0;
   padding: 0;
- }
+}
 
- .navigation-logo{
-   width: 139px;
- }
+.navigation-logo {
+  width: 139px;
+}
 
-.navigation-menu{
+.navigation-menu {
   width: 345px;
 }
 
-.navigation-user{
+.navigation-user {
   max-width: 300px;
   margin-left: auto;
 }
 
-/*Навигация*/
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -88,6 +90,7 @@ body {
 }
 
 /*Стили для основного блока*/
+
 .main-index {
   color: #000000;
   background-color: #ffffff;
@@ -98,9 +101,35 @@ body {
   flex-grow: 1;
 }
 
-/*Добавляет фон блоку с логотипом*/
+.page-conteiner {
+  width: 1200px;
+  margin: 0 auto;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.divider {
+  display: block;
+  margin: 0 auto;
+}
+
+.info-conteiner{
+  display: block;
+  width: 1200px;
+  height: 282px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
 .info-page {
-  background-image: url("/images/index-background.jpg");
+  background-image: url("/images/index-background.jpg"); /*Добавляет фон блоку с логотипом*/
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -120,10 +149,27 @@ body {
 }
 
 /*Блог преимуществ*/
+
 .advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
   text-align: center;
   background-color: #83b3d3;
   color: #ffffff;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
+.advantages-item{
+  width: 400px;
+  height: 384px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 .advantages-title {
@@ -133,11 +179,27 @@ body {
   font-weight: 700;
 }
 
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
 /*Блог сервиса*/
 .services-item {
+  width: 400px;
+  height: 384px;
+
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
-  color: #000000;
+  color: #000000;  
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 .background-white {
