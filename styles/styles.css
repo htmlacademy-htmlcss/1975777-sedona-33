@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   min-height: 100%;
 
-  font-family: "PT-Sants", "Aria", sans-serif;
+  font-family: "PT Sans", "Aria", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #242424;
@@ -102,32 +102,27 @@ body {
 }
 
 .page-conteiner {
+  /*вся основная страница*/
   width: 1200px;
   margin: 0 auto;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; /*обводка блоков*/
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-}
-
-.divider {
-  display: block;
-  margin: 0 auto;
 }
 
 .info-conteiner {
-  display: block;
+  /*1 сетка*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
   width: 1200px;
 
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; /*обводка блоков*/
 }
 
-.info-page {
+.welcome-page {
   background-image: url("/images/index-background.jpg"); /*Добавляет фон блоку с логотипом*/
   background-color: #ffffff;
   background-size: 100% auto;
@@ -143,7 +138,7 @@ body {
 
 .info-description {
   font-size: 22px;
-  line-height: 36px;
+  line-height: 26px;
   font-weight: 400;
 }
 
@@ -216,31 +211,12 @@ body {
 }
 /*Заинтересовались?*/
 
-.info-hotel-conteiner {
-  display: block;
-  margin: 0;
-  padding: 0;
- 
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
-}
-
 .info-hotel {
   text-align: center;
   background-color: #ffffff;
 }
 
 /*Блог подписки*/
-
-.info-email-conteiner{
-  display: block;
-  margin: 0;
-  padding: 0;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
-}
-
 .info-email {
   color: #ffffff;
   background-color: #000000;
@@ -248,6 +224,17 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.button-hotel {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .info-email-title {
@@ -263,37 +250,32 @@ body {
   font-weight: 400;
 }
 
-.button-hotel {
+.button-email {
   font-size: 20px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 26px;
   text-align: center;
-  color: #ffffff;
-  background-color: #756257;
-  text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /*Стили для подвала*/
-
-.page-footer-conteiner{
+.page-footer-conteiner {
   display: flex;
+  flex-direction: row;
   width: 1200px;
   margin: 0 auto;
 }
-
-.phone-block{
+.footer-phone {
   width: 720px;
- 
 }
 
-
-.htmlacademy-block{
+.footer-htmlacademy {
+  margin-left: auto;
   width: 115px;
-  
 }
 
-.footer-social-list{
+.footer-social-list {
   margin-right: auto;
   width: 107px;
   height: 18px;
@@ -301,10 +283,6 @@ body {
 
 .page-footer {
   background-color: #ffffff;
-}
-
-.footer-social {
-  text-align: center;
 }
 
 .footer-phone-title {

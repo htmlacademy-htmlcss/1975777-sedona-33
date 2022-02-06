@@ -14,6 +14,7 @@
     <nav class="navigation">
 
       <ul class="navigation-list navigation-logo">
+        <!--Список навигации для логотипа -->
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">
             <img class="logo-main" src="images/logo.svg" width="139" height="70"
@@ -23,6 +24,7 @@
       </ul>
 
       <ul class="navigation-list navigation-menu">
+        <!--Список навигации для меню -->
         <li class="navigation-item">
           <a class="navigation-link" href="#">Главная</a>
         </li>
@@ -35,6 +37,7 @@
       </ul>
 
       <ul class="navigation-list navigation-user">
+        <!--Список для пользовательского меню -->
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <img class="navigation-image" src="images/search.svg" width="18" height="18" alt="поиск">
@@ -55,22 +58,27 @@
   </header>
 
   <!-- Основной блог -->
-  <main class="main-conteiner main-index">
+  <main class=" main-index main-conteiner">
     <div class="page-conteiner">
 
-      <section class="info-page">
-        <h1 class="visually-hidden">Седона</h1>
-        <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
-        <img class="divider" src="images/divider.svg" width="1200" height="57" alt="Разделитель">
+      <div class="info-conteiner">
 
-        <div class="info-conteiner">
-          <!--Обернула в блок информацию - приветствие -->
+        <section class="welcome-page">
+          <h1 class="visually-hidden">Седона</h1>
+          <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        </section>
+
+        <section class="divider-block">
+          <span class="vissually-hidden">Разделитель</span>
+          <img class="divider" src="images/divider.svg" width="1200" height="57" alt="Разделитель">
+        </section>
+
+        <section class="info-page">
           <h2 class="info-title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
           <p class="info-description"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон! </p>
-        </div>
+        </section>
 
-      </section>
-
+      </div>
 
       <!-- Блог преимуществ -->
       <section class="advantages">
@@ -144,29 +152,26 @@
       </section>
 
 
-      <!-- кнопка поиска гостиниц -->
-      <div class="info-hotel-conteiner">
-
-        <section class="info-hotel">
-          <h2 class="info-title">Заинтересовались?</h2>
-          <p class="info-description"> Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне</p>
-          <a class="button-hotel" href="#">Поиск гостиницы в Седоне</a>
-        </section>
-
-      </div>
+      <!-- Заинтересовались -->
+      <section class="info-hotel">
+        <h2 class="info-title">Заинтересовались?</h2>
+        <p class="info-description"> Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+          гостиниц
+          в Седоне</p>
+        <a class="button-hotel" href="#">Поиск гостиницы в Седоне</a>
+      </section>
 
       <!-- Подписка -->
-      <div class="info-email-conteiner">
-
-        <section class="info-email">
-          <h2 class="info-email-title">Подпишитесь на рассылку</h2>
-          <p class="info-email-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <input type="text" value="Ваш e-mail">Подписаться
-        </section>
-
-      </div>
+      <section class="info-email">
+        <h2 class="info-email-title">Подпишитесь на рассылку</h2>
+        <p class="info-email-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
+          <label for="email"><span class="vissualy-hidden">Введите e-mail</span> </label>
+          <input class="field" type="email" id="email" placeholder="Ваш e-mail" name="new-email">
+          <button class="button-email button-blue" type="submit"> Подписаться</button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <!-- Подвал -->
@@ -178,36 +183,33 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="#">
+              <span class="vissually-hidden">Твиттер</span>
               <img class="social-image" src="images/twitter.svg" width="18" height="15" alt="ссылка на Твиттер">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="#">
+              <span class="vissually-hidden">Фейсбук</span>
               <img class="social-image" src="images/facebook.svg" width="10" height="18" alt="ссылка на Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="#">
+              <span class="vissually-hidden">YouTube</span>
               <img class="social-image" src="images/youtube.svg" width="20" height="16" alt="ссылка на YouTube">
             </a>
           </li>
       </section>
-      
-      <!-- Контакты -->
-      <div class="phone-block">
-
+      <!-- Телефон -->
+      <section class="footer-phone">
         <a class="footer-phone-title" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-      </div>
-
-      <div class="htmlacademy-block">
-
+      </section>
+      <!--лого академии-->
+      <section class="footer-htmlacademy">
         <a class="htmlacademy" href="https://up.htmlacademy.ru">
           <img class="htmlacademy-image" src="images/logo-htmlacademy.svg" width="115" height="33"
-            alt="логотип HTML-академии">
-        </a>
-
-      </div>
+            alt="логотип HTML-академии"> </a>
+      </section>
 
     </div>
   </footer>
