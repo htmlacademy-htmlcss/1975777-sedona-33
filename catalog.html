@@ -13,15 +13,11 @@
   <header class="page-header">
     <nav class="navigation">
 
-      <ul class="navigation-list navigation-logo">
-        <!--Список навигации для логотипа -->
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">
-            <img class="logo-main" src="images/logo.svg" width="139" height="70"
-              alt="Логотип Седоны, с переходом на главную страницу">
-          </a>
-        </li>
-      </ul>
+      <a class="navigation-link navigation-logo" href="index.html">
+        <img class="logo-main" src="images/logo.svg" width="139" height="70"
+          alt="Логотип Седоны, с переходом на главную страницу">
+      </a>
+
 
       <ul class="navigation-list navigation-menu">
         <!--Список навигации для меню -->
@@ -63,10 +59,10 @@
 
       <section class="background-catalog">
         <!-- сделано для фона шапки каталога и фильтров-->
+
         <header class="inner-header">
           <h1 class="inner-header-title"> Гостиницы Седоны </h1>
           <ul class="breadcrumbs">
-            <!--хлебные крошки -->
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="vissually-hidden"> Главная </span>
@@ -74,13 +70,15 @@
                   alt="Переход на главную страницу">
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li>
               <img class="breadcrumbs-image" src="images/bread-crumbs.svg" width="5" height="8" alt="указатель">
+            </li>
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы </a>
             </li>
           </ul>
         </header>
-        <!-- <div class="catalog-products"> флекс блок для всего каталога-->
+
         <div class="catalog-filter">
           <!-- флекс блок для фильтра -->
           <fieldset class="catalog-filter-group">
@@ -125,12 +123,15 @@
             </ul>
           </fieldset>
 
-          <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="button-catalog button-blue" type="submit">Применить</button>
-          </form>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <button class="delete" href="#">Сбросить</button>
-          </form>
+
+          <div class="button-catalog-filter">
+            <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+              <button class="button-catalog button-blue" type="submit">Применить</button>
+            </form>
+            <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+              <button class="delete" href="#">Сбросить</button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -141,11 +142,9 @@
 
         <span class="hotels-found"> Найдено гостиниц: 38 </span>
 
-        <div class="select">
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
           </select>
-        </div>
 
         <a class="button-mode" href="#">
           <span class="visually-hidden" hidden>Показать плиткой</span>
@@ -317,7 +316,7 @@
       <p class="info-email-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
         <label for="email">
-          <span class="vissualy-hidden">Введите e-mail</span> 
+          <span class="vissualy-hidden">Введите e-mail</span>
         </label>
         <input class="field" type="email" id="email" placeholder="Ваш e-mail" name="new-email">
         <button class="button-email button-blue" type="submit"> Подписаться</button>

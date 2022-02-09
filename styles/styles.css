@@ -278,6 +278,9 @@ body {
   padding-left: 72px;
   padding-right: 72px;
   justify-content: space-between;
+  
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 .footer-phone {
@@ -313,6 +316,7 @@ body {
 }
 
 /*Каталог*/
+
 .main-inner {
   color: #000000;
   background-color: #ffffff;
@@ -327,6 +331,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 71px;
+  padding: 0;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
@@ -336,6 +350,13 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+  min-width: 110px;
+  justify-content: flex-start;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+
   text-align: left;
   font-size: 16px;
   font-weight: 400;
@@ -343,7 +364,30 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 72px;
+  margin-top: 45px;
+  margin-bottom: 83px;
+  margin-right: 72px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
+.buttom-catalog-filter {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
+}
+
 .catalog-filter-group {
+  min-width: 150px;
+  margin-right: 67px;
   color: #ffffff;
 }
 
@@ -363,11 +407,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
-}
-.catalog-filter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 /*кнопки для каталога*/
@@ -403,23 +442,24 @@ body {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+  border: none;
 }
 
 /*Сортировка*/
 .sorting-container {
   display: flex;
-  flex-direction: row;
   width: 1057px;
-  margin-left: 71px;
-  margin-right: 72px;
-  margin-top: 44px;
-  margin-bottom: 53px;
+  margin: 0 72px;
+  justify-content: space-between;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 .hotels-found {
-  margin-left: 0;
+  display: block;
+  min-width: 350px;
   margin-right: 192px;
-  width: 350px;
 
   font-size: 30px;
   font-weight: 700;
@@ -428,36 +468,33 @@ body {
   text-transform: uppercase;
 }
 
-.select {
-  width: 290px;
-  margin-right: 81px;
-}
-
 .select-control {
+  width: 290px;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   color: #333333;
 }
 .button-mode {
-  margin-top: 44px;
-  margin-right: 8px;
-  height: 48px;
   width: 48px;
+
   border-radius: 4px;
   border: 2px solid #000000;
 }
 
 .product-card {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 72px;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 
 .rang {
   display: flex;
-  flex-direction: row;
 }
 
 .product-card-link {
@@ -479,20 +516,28 @@ body {
 /*Панагация*/
 .pagination-page {
   display: flex;
-  flex-direction: row;
   width: 1056px;
-  margin-left: 72px;
-  margin-right: 72px;
+  margin: 0 72px;
+  padding: 0;
+  justify-content: space-between;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
 .pagination {
   display: flex;
-  flex-direction: row;
-  margin-right: 302px;
+  width: 370px;
+  margin-right: 300px;
+  align-items: center;
+
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; /*обводка блоков*/
 }
+
 .pagination-item {
-  height: 55px;
   width: 55px;
   border-radius: 4px;
+  border: 2px solid #000000;
   margin-right: 8px;
 }
 
@@ -512,7 +557,7 @@ body {
 }
 
 .hotel-on-page {
-  height: 23px;
+  display: block;
   width: 175px;
   margin-right: 51px;
 
@@ -523,8 +568,8 @@ body {
 }
 
 .hotel-on-page-list {
-  height: 48px;
   width: 160px;
+  margin-left: 51px;
   border-radius: 4px;
 
   font-size: 18px;
