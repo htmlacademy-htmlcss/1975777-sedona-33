@@ -278,7 +278,7 @@ body {
   padding-left: 72px;
   padding-right: 72px;
   justify-content: space-between;
-  
+
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; /*обводка блоков*/
 }
@@ -293,6 +293,7 @@ body {
 }
 
 .footer-social-list {
+  display: flex;
   margin-right: 61px;
   width: 107px;
 }
@@ -443,6 +444,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   border: none;
+  background: none;
 }
 
 /*Сортировка*/
