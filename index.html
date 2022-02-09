@@ -13,15 +13,16 @@
   <header class="page-header">
     <nav class="navigation">
 
-      <ul class="navigation-list navigation-logo">
-        <!--Список навигации для логотипа -->
+      <a class="navigation-link navigation-logo" href="index.html">
+        <img class="logo-main" src="images/logo.svg" width="139" height="70"
+          alt="Логотип Седоны, с переходом на главную страницу">
+      </a>
+      <!--<ul class="navigation-list navigation-logo">
+        Список навигации для логотипа 
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">
-            <img class="logo-main" src="images/logo.svg" width="139" height="70"
-              alt="Логотип Седоны, с переходом на главную страницу">
-          </a>
+          
         </li>
-      </ul>
+      </ul>-->
 
       <ul class="navigation-list navigation-menu">
         <!--Список навигации для меню -->
@@ -88,7 +89,7 @@
             <p class="advantages-description">— №1 — </p>
             <p class="advantages-description">Седона — не аттракцион<br> для туристов, там течёт<br> своя жизнь </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-image">
             <img class="advantages-image" src="images/real-city.jpg" width="800" height="384" alt="Фото города">
           </li>
         </ul>
@@ -119,7 +120,7 @@
       <!-- Блог преимуществ 2 -->
       <section class="advantages">
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-image">
             <img class="advantages-image" src="images/devil-is-bridge.jpg" width="800" height="384" alt="Мост дьявола">
           </li>
           <li class="advantages-item">
@@ -167,7 +168,7 @@
         <p class="info-email-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
           <label for="email">
-            <span class="vissualy-hidden">Введите e-mail</span> 
+            <span class="vissualy-hidden">Введите e-mail</span>
           </label>
           <input class="field" type="email" id="email" placeholder="Ваш e-mail" name="new-email">
           <button class="button-email button-blue" type="submit"> Подписаться</button>
@@ -175,8 +176,8 @@
       </section>
     </div>
   </main>
-   <!-- Подвал -->
-   <footer class="page-footer">
+  <!-- Подвал -->
+  <footer class="page-footer">
     <div class="page-footer-conteiner">
 
       <!-- Социальные сети-->

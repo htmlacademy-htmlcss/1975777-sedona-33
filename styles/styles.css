@@ -51,16 +51,20 @@ body {
   outline-offset: -5px; /*обводка блоков*/
 }
 
-.navigation-list {
-  margin: 0;
+/*.navigation-list {
+  margin: 0 auto;
   padding: 0;
-}
+}*/
 
 .navigation-logo {
+  margin-right: auto;
+  padding: 0;
   width: 139px;
 }
 
 .navigation-menu {
+  margin: 0 auto;
+  padding: 0;
   width: 345px;
 }
 
@@ -129,6 +133,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .info-title {
   font-size: 30px;
   text-transform: uppercase;
@@ -172,6 +181,9 @@ body {
   font-weight: 700;
 }
 
+.advantages-item-image {
+  flex-grow: 2;
+}
 /*Блог сервиса*/
 
 .services-list {
@@ -262,31 +274,28 @@ body {
 /*Стили для подвала*/
 .page-footer-conteiner {
   display: flex;
-  flex-direction: row;
-  width: 1200px;
   margin: 0 auto;
-  margin-left: 72px;
-  margin-right: 72px;
+  padding-left: 72px;
+  padding-right: 72px;
+  justify-content: space-between;
 }
+
 .footer-phone {
   width: 720px;
-  margin-right: 53px;
-  margin-left: 61px;
 }
 
 .footer-htmlacademy {
+  margin-left: 53px;
   width: 115px;
 }
 
 .footer-social-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: 61px;  
+  margin-right: 61px;
   width: 107px;
-  height: 18px;
 }
 
 .page-footer {
+  height: 100%;
   background-color: #ffffff;
 }
 
