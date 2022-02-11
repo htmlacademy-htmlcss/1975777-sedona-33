@@ -36,6 +36,17 @@ body {
   outline-offset: -5px; /*обводка блоков*/
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Шапка*/
 .page-header {
   color: #000000;
@@ -46,45 +57,57 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
+  padding: 0 70px;
+  background-color: #ffffff;
 }
 
-/*.navigation-list {
-  margin: 0 auto;
-  padding: 0;
-}*/
-
-.navigation-logo {
-  margin-right: auto;
-  padding: 0;
-  width: 139px;
-}
-
-.navigation-menu {
-  margin: 0 auto;
-  padding: 0;
-  width: 345px;
-}
-
-.navigation-user {
-  max-width: 300px;
-  margin-left: auto;
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 17px;
+  padding-left: 17px;
+
   font-size: 20px;
   line-height: 26px;
   color: #000000;
   font-weight: 700;
   text-align: center;
-  background-color: #ffffff;
   text-decoration: none;
   text-transform: none;
 }
 
+.navigation-logo {
+  margin-right: 30px;
+  width: 139px;
+  align-items: center;
+}
+
+.navigation-menu {
+  min-width: 345px;
+  margin-right: auto;
+}
+
+.navigation-user {
+  min-width: 264px;
+  margin-left: auto;
+}
+
+.navigation-user.navigation-link {
+  min-width: 42px;
+  min-height: 66px;
+}
+
 .button-navigation {
+  width: 160px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -102,40 +125,42 @@ body {
 }
 
 .main-conteiner {
-  flex-grow: 1;
+  flex-grow: 1; 
 }
 
-.page-conteiner {
-  /*вся основная страница*/
-  width: 1200px;
-  margin: 0 auto;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
-}
-
-.info-conteiner {
-  /*1 сетка*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1200px;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
-}
-
-.welcome-page {
-  background-image: url("/images/index-background.jpg"); /*Добавляет фон блоку с логотипом*/
+.welcome-page{
+  padding-top: 51px;
+  background-image: url("/images/index-background.jpg");
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.page-conteiner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.info-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .logo {
   display: block;
   margin: 0 auto;
+}
+
+.divider {
+  margin-top: 25px;
+}
+
+.info-page {
+  margin-top: 63px;
+  margin-bottom: 80px;
 }
 
 .info-title {
@@ -158,20 +183,19 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-
   text-align: center;
   background-color: #83b3d3;
   color: #ffffff;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
+  list-style-type: none;
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
+  height: 384px;
 }
 
 .advantages-title {
@@ -191,20 +215,19 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
+  list-style-type: none;
 }
 
 .services-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-
+  height: 384px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
 }
 
 .background-white {
@@ -224,21 +247,21 @@ body {
 /*Заинтересовались?*/
 
 .info-hotel {
+  padding-top: 91px;
+  padding-bottom: 93px;
   text-align: center;
   background-color: #ffffff;
 }
 
-/*Блог подписки*/
-.info-email {
-  color: #ffffff;
-  background-color: #000000;
-  background-image: url("/images/background-footer.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
 .button-hotel {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 312px;
+  margin-right: 313px;
+  margin-top: 56px;
+  width: 575px;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -247,6 +270,20 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 10px;
+}
+
+/*Блог подписки*/
+.info-email {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("/images/background-footer.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .info-email-title {
@@ -257,12 +294,35 @@ body {
 }
 
 .info-email-description {
+  margin-top: 29px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
 
+.new-form {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.field {
+  width: 600px;
+  border-radius: 10px 0px 0px 10px;
+  border-style: none;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 22px;
+}
+
 .button-email {
+  width: 200px;
+  border-radius: 0px 10px 10px 0px;
+  border-style: none;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -272,35 +332,27 @@ body {
 }
 
 /*Стили для подвала*/
+
+.page-footer {
+  height: 100%;
+  background-color: #ffffff;
+}
+
 .page-footer-conteiner {
   display: flex;
   margin: 0 auto;
   padding-left: 72px;
   padding-right: 72px;
   justify-content: space-between;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; /*обводка блоков*/
-}
-
-.footer-phone {
-  width: 720px;
-}
-
-.footer-htmlacademy {
-  margin-left: 53px;
-  width: 115px;
+  align-items: center;
 }
 
 .footer-social-list {
   display: flex;
-  margin-right: 61px;
-  width: 107px;
-}
-
-.page-footer {
-  height: 100%;
-  background-color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 107px;
+  list-style-type: none;
 }
 
 .footer-phone-title {
@@ -310,10 +362,13 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #000000;
+  width: 720px;
 }
 
 .htmlacademy {
   text-align: center;
+  margin-left: auto;
+  width: 115px;
 }
 
 /*Каталог*/
