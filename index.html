@@ -13,17 +13,11 @@
   <header class="page-header">
     <nav class="navigation">
 
-      <a class="navigation-link navigation-logo" href="index.html">
+      <a class="navigation-logo" href="index.html">
         <img class="logo-main" src="images/logo.svg" width="139" height="70"
           alt="Логотип Седоны, с переходом на главную страницу">
       </a>
-      <!--<ul class="navigation-list navigation-logo">
-        Список навигации для логотипа 
-        <li class="navigation-item">
-          
-        </li>
-      </ul>-->
-
+    
       <ul class="navigation-list navigation-menu">
         <!--Список навигации для меню -->
         <li class="navigation-item">
@@ -41,11 +35,13 @@
         <!--Список для пользовательского меню -->
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <h3 class="visually-hidden">ПОИСК</h3>
             <img class="navigation-image" src="images/search.svg" width="18" height="18" alt="поиск">
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <h3 class="visually-hidden">ИЗБРАННОЕ</h3>
             <img class="navigation-image" src="images/favorite.svg" width="18" height="17" alt="избранное">
           </a>
         </li>
@@ -67,10 +63,7 @@
         <section class="welcome-page">
           <h1 class="visually-hidden">Седона</h1>
           <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
-        </section>
-
-        <section class="divider-block">
-          <span class="vissually-hidden">Разделитель</span>
+          <span class="visually-hidden">Разделитель</span>
           <img class="divider" src="images/divider.svg" width="1200" height="57" alt="Разделитель">
         </section>
 
@@ -83,6 +76,7 @@
 
       <!-- Блог преимуществ -->
       <section class="advantages">
+        <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок </h3>
@@ -97,6 +91,7 @@
 
       <!-- Блог сервиса -->
       <section class="services">
+        <h3 class="visually-hidden">Сервис</h3>
         <ul class="services-list">
           <li class="services-item">
             <img class="services-image" src="images/home.svg" width="75" height="72" alt="Иконка жилья">
@@ -119,6 +114,7 @@
 
       <!-- Блог преимуществ 2 -->
       <section class="advantages">
+        <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-image">
             <img class="advantages-image" src="images/devil-is-bridge.jpg" width="800" height="384" alt="Мост дьявола">
@@ -133,6 +129,7 @@
 
       <!-- Блог сервиса 2 -->
       <section class="services">
+        <h3 class="visually-hidden">Сервис</h3>            
         <ul class="services-list">
           <li class="services-item">
             <h3 class="services-title">Небольшая<br> площадь</h3>
@@ -168,10 +165,10 @@
         <p class="info-email-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="new-form" action="http://echo.htmlacademy.ru/" method="post">
           <label for="email">
-            <span class="vissualy-hidden">Введите e-mail</span>
+            <span class="visually-hidden">Введите e-mail</span>
           </label>
           <input class="field" type="email" id="email" placeholder="Ваш e-mail" name="new-email">
-          <button class="button-email button-blue" type="submit"> Подписаться</button>
+          <button class="button-email" type="submit"> Подписаться</button>
         </form>
       </section>
     </div>
@@ -182,36 +179,37 @@
 
       <!-- Социальные сети-->
       <section class="footer-social">
+        <h3 class="visually-hidden"> Социальные сети </h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="#">
-              <span class="vissually-hidden" hidden>Твиттер</span>
+              <span class="visually-hidden">Твиттер</span>
               <img class="social-image" src="images/twitter.svg" width="18" height="15" alt="ссылка на Твиттер">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="#">
-              <span class="vissually-hidden" hidden>Фейсбук</span>
+              <span class="visually-hidden">Фейсбук</span>
               <img class="social-image" src="images/facebook.svg" width="10" height="18" alt="ссылка на Фейсбук">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="#">
-              <span class="vissually-hidden" hidden>YouTube</span>
+              <span class="visually-hidden">YouTube</span>
               <img class="social-image" src="images/youtube.svg" width="20" height="16" alt="ссылка на YouTube">
             </a>
           </li>
       </section>
       <!-- Телефон -->
-      <section class="footer-phone">
+     
         <a class="footer-phone-title" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
+     
       <!--лого академии-->
-      <section class="footer-htmlacademy">
+      
         <a class="htmlacademy" href="https://up.htmlacademy.ru">
           <img class="htmlacademy-image" src="images/logo-htmlacademy.svg" width="115" height="33"
             alt="логотип HTML-академии"> </a>
-      </section>
+      
 
     </div>
   </footer>
