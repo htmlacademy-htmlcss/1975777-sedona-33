@@ -480,6 +480,18 @@ button {
   margin-left: 10px;
 }
 
+.breadcrumbs-next{
+  width: 6px;
+  background-image: url(/images/bread-crumbs.svg);
+  background-repeat: no-repeat;
+  background-size: 5px 8px;
+  background-position: center;
+}
+
+.breadcrumbs-item{
+  
+}
+
 .filter {
   display: flex;
   justify-content: space-between;
