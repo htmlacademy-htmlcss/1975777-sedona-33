@@ -60,7 +60,6 @@ button {
 }
 /*Навигация*/
 .navigation {
-  position: relative;
   display: flex;
   width: 1060px;
   margin: 0 auto;
@@ -77,12 +76,11 @@ button {
 
 .navigation-link {
   display: block;
-  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 17px;
   padding-left: 17px;
-
+  position: relative;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -96,24 +94,32 @@ button {
   color: #756257;
 }
 
-.navigation-logo {
-  position: absolute;
-  margin-right: 30px;
-  min-width: 139px;
-  align-items: center;
+.navigation-link:hover {
+  color: #756257;
 }
 
-.navigation-menu {
-  margin-left: 169px;
+.navigation-link:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.navigation-logo {
+  position: relative;
+  z-index: 2;
+  margin-right: 30px;
+  min-width: 139px;
+}
+.navigation-logo img{
+  position: absolute;
 }
 
 .navigation-user {
   min-width: 84px;
   margin-left: auto;
 }
-.navigation-user .navigation-item {
-  position: relative;
-  min-width: 42px;
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 26px;
 }
 
 .navigation-icon {
@@ -126,8 +132,13 @@ button {
   fill: #000000;
 }
 
-.navigation-icon:hover {
+.navigation-link:hover .navigation-icon {
   fill: #756257;
+}
+
+.navigation-link:active .navigation-icon {
+  fill: #756257;
+  opacity: 0.3;
 }
 
 .button-navigation {
@@ -150,8 +161,18 @@ button {
   margin-bottom: 14px;
 }
 
+.button-navigation:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
 .button-navigation:hover {
   background-color: #615048;
+}
+
+.button-navigation:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Стили для основного блока*/
@@ -299,7 +320,7 @@ button {
   margin-right: 313px;
   margin-top: 56px;
   width: 575px;
-
+  box-sizing: border-box;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -313,6 +334,16 @@ button {
 
 .button-hotel:hover {
   background-color: #615048;
+}
+
+.button-hotel:focus {
+  background: #615048;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.button-hotel:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Блог подписки*/
@@ -348,9 +379,6 @@ button {
   height: 60px;
 }
 
-.email {
-}
-
 .field {
   min-width: 600px;
   border-radius: 10px 0px 0px 10px;
@@ -361,6 +389,20 @@ button {
   line-height: 26px;
   text-align: left;
   padding-left: 22px;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.field:invalid {
+  border: 2px solid #ff5757;
 }
 
 .button-email {
@@ -382,6 +424,18 @@ button {
   background-color: #68a2ca;
 }
 
+.button-email:focus {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  outline: none;
+}
+
+.button-email:active {
+  border: none;
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*Стили для подвала*/
 
 .page-footer {
@@ -391,10 +445,8 @@ button {
 
 .page-footer-conteiner {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
-  align-items: center;
-  padding: 40px 72px;
+  margin: 40px 72px;
 }
 
 .footer-social-list {
@@ -403,63 +455,116 @@ button {
   justify-content: space-between;
   min-width: 107px;
   list-style-type: none;
+  padding: 0;
 }
 
-.footer-social-item {
+.footer-social-item{
+  
+}
+.social-button {
+  display: block;
   position: relative;
+  width: 40px;
+  height: 40px; 
+  
+}
+
+.social-icon {
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.social-button:focus {
+  /*общий фокус на соц сети*/
+  outline: 3px solid #83b3d3;
+  border-radius: 10px;
 }
 
 .social-icon-tw {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  /*твиттер*/
   fill: #83b3d3;
 }
 
-.social-icon-tw:hover {
+.social-button:focus .social-icon-tw {
   fill: #68a2ca;
+  outline: none;
+}
+.footer-social-item:hover .social-icon-tw {
+  fill: #68a2ca;
+}
+.footer-social-item:active .social-icon-tw {
+  fill: #68a2ca;
+  opacity: 0.3;
 }
 
 .social-icon-fb {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  /*фейсбук*/
   fill: #83b3d3;
 }
 
-.social-icon-fb:hover {
+.footer-social-item:focus .social-icon-fb {
   fill: #68a2ca;
+  outline: none;
+}
+
+.footer-social-item:hover .social-icon-fb {
+  fill: #68a2ca;
+}
+
+.footer-social-item:active .social-icon-fb {
+  fill: #68a2ca;
+  opacity: 0.3;
 }
 
 .social-icon-yt {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  /*ютюб*/
   fill: #83b3d3;
 }
 
-.social-icon-yt:hover {
+.footer-social-item:focus .social-icon-yt {
+  fill: #68a2ca;
+  outline: none;
+}
+
+.footer-social-item:hover .social-icon-yt {
   fill: #68a2ca;
 }
 
+.footer-social-item:active .social-icon-yt {
+  fill: #68a2ca;
+  opacity: 0.3;
+}
+
 .footer-phone-title {
+  border: none;
+  margin-left: 270px;
   text-align: center;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   text-decoration: none;
   color: #000000;
-  min-width: 720px;
 }
 
 .footer-phone-title:hover {
   color: #756257;
+}
+
+.footer-phone-title:focus {
+  border: 3px solid #83b3d3;
+  color: #756257;
+  outline: none;
+  border-radius: 10px;
+}
+
+.footer-phone-title:active {
+  color: #756257;
+  opacity: 0.3;
+  border: none;
 }
 
 .htmlacademy {
@@ -472,8 +577,24 @@ button {
   fill: #000000;
 }
 
-.htmlacademy-svg:hover {
+.htmlacademy .htmlacademy-svg:hover {
   fill: #756257;
+}
+
+.htmlacademy:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
+  border-radius: 10px;
+}
+
+.htmlacademy:focus .htmlacademy-svg {
+  fill: #756257;
+  outline: none;
+}
+
+.htmlacademy:active .htmlacademy-svg {
+  fill: #756257;
+  opacity: 0.3;
 }
 
 /*Каталог*/
@@ -525,6 +646,17 @@ button {
 
 .breadcrumbs-item:not(:nth-child(2)):hover {
   opacity: 0.6;
+}
+
+.breadcrumbs-item:not(:nth-child(2)):focus {
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.breadcrumbs-item:not(:nth-child(2)):active {
+  opacity: 0.3;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -939,8 +1071,8 @@ button {
   text-align: left;
 }
 
-.hotel-on-page-list:hover{
-  border: 2px solid #83B3D3;
+.hotel-on-page-list:hover {
+  border: 2px solid #83b3d3;
 }
 
 .info-email-catalog {
