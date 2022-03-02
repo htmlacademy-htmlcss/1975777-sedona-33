@@ -152,6 +152,26 @@ body {
   flex-direction: column;
 }
 
+.navigation-link-current::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 68px;
+  bottom: 0;
+  top: 66px;
+  background-color: rgba(117, 98, 87, 1);
+}
+
+.navigation-link-hotels::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 93px;
+  bottom: 0;
+  top: 66px;
+  background-color: rgba(117, 98, 87, 1);
+}
+
 .button-navigation {
   min-width: 160px;
   border: none;
