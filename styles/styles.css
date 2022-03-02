@@ -32,15 +32,6 @@ body {
   margin: 0 auto;
 }
 
-input {
-  font-family: "PT Sans", "Aria", sans-serif;
-}
-
-button {
-  font-family: "PT Sans", "Aria", sans-serif;
-  cursor: pointer;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -54,7 +45,7 @@ button {
 
 /*Шапка*/
 .page-header {
-  height: 66px;
+  min-height: 66px;
   color: #000000;
   background-color: #fbf7f4;
 }
@@ -403,7 +394,7 @@ button {
   min-width: 600px;
   border-radius: 10px 0px 0px 10px;
   border-style: none;
-
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -478,8 +469,6 @@ button {
   padding: 0;
 }
 
-.footer-social-item {
-}
 .social-button {
   display: block;
   position: relative;
@@ -662,18 +651,16 @@ button {
   color: #ffffff;
 }
 
-.breadcrumbs-item:not(:nth-child(2)):hover {
+.breadcrumbs-item:hover .breadcrumbs-item-object {
   opacity: 0.6;
 }
 
-.breadcrumbs-item:not(:nth-child(2)):focus {
-  border: 3px solid #83b3d3;
-  box-sizing: border-box;
+.breadcrumbs-item:focus .breadcrumbs-item-object {
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
-  outline: none;
 }
 
-.breadcrumbs-item:not(:nth-child(2)):active {
+.breadcrumbs-item:active .breadcrumbs-item-object{
   opacity: 0.3;
 }
 
