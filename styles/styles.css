@@ -671,17 +671,17 @@ body {
   color: #ffffff;
 }
 
-.breadcrumbs-link{
+.breadcrumbs-link {
   padding: 3px 9px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.breadcrumbs-link:hover  {
+.breadcrumbs-link:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:focus  {
+.breadcrumbs-link:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
@@ -818,12 +818,6 @@ body {
 .delete:active {
   opacity: 0.3;
   outline: none;
-}
-
-.button-grey {
-  font-weight: 400;
-  background-color: #f2f2f2;
-  color: #000000;
 }
 
 /*Сортировка*/
@@ -968,16 +962,16 @@ body {
   text-transform: none;
 }
 
-.product-card-image:hover {
+.product-card-hotel:hover {
   opacity: 0.6;
 }
 
-.product-card-image:focus {
+.product-card-hotel:focus {
   border: 3px solid #83b3d3;
   outline: none;
 }
 
-.product-card-image:active {
+.product-card-hotel:active {
   opacity: 0.3;
 }
 
@@ -1083,7 +1077,11 @@ body {
   min-width: 160px;
   border-radius: 4px;
   line-height: 37px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  color: #000000;
 }
+
 
 .rang {
   display: flex;
@@ -1101,8 +1099,8 @@ body {
   width: 1055px;
   height: 1px;
   content: "";
-  top: 0; 
-  background-color: #E6E6E6;
+  top: 0;
+  background-color: #e6e6e6;
 }
 
 .download-block::after {
@@ -1111,10 +1109,10 @@ body {
   height: 1px;
   content: "";
   bottom: 0;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
-.download-block{
+.download-block {
   position: relative;
   display: flex;
 }
