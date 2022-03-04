@@ -420,6 +420,7 @@ body {
   line-height: 26px;
   text-align: left;
   padding-left: 22px;
+  padding-right: 22px;
 }
 
 .field:hover {
@@ -709,7 +710,6 @@ body {
 
 .catalog-filter {
   display: flex;
-  min-width: 500px;
 }
 
 .catalog-filter-group {
@@ -739,6 +739,116 @@ body {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+}
+
+/*RANGE*/
+.range-scale {
+  position: relative;
+  top: 32px;
+  height: 4px;
+  width: 287px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.button-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-toggle:hover {
+  background-color: #ffffff;
+}
+
+.button-toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.button-toggle:active {
+  outline: 2px solid #83b3d3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.range-input {
+  width: 144px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  margin-top: 34px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.range-input-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label-min,
+.catalog-filter-label-max{
+  position: relative;
+}
+
+.catalog-filter-label-min::after,
+.catalog-filter-label-max::after {
+  position: absolute;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: right;
+  right: 14px;
+  bottom: 13px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-filter-label-max::after {
+  content: "до";
+}
+.catalog-filter-label-min::after {
+  content: "от";
+}
+
+.range-input-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-title-range {
+  text-align: left;
 }
 
 .button-catalog-filter {
@@ -1073,6 +1183,12 @@ body {
 }
 
 .button-rang {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  font-family: inherit;
   min-height: 37px;
   min-width: 160px;
   border-radius: 4px;
@@ -1081,7 +1197,6 @@ body {
   background-color: #f2f2f2;
   color: #000000;
 }
-
 
 .rang {
   display: flex;
