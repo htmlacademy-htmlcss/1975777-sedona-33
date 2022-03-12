@@ -734,6 +734,7 @@ body {
   padding: 0;
   border: none;
   color: #ffffff;
+  margin-right: 67px;
 }
 
 .catalog-filter-list {
@@ -841,7 +842,6 @@ body {
 /*RANGE*/
 
 .catalog-filter-group-price {
-  max-width: 287px;
   width: 287px;
   margin-right: 81px;
 }
@@ -893,8 +893,6 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  max-width: 287px;
-  width: 287px;
 }
 
 .range-input {
