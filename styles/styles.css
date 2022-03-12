@@ -1087,6 +1087,7 @@ body {
   background-image: url(/images/select-image.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
+  -webkit-appearance: none;
 }
 
 .select-control:focus {
@@ -1480,6 +1481,7 @@ body {
   background-image: url(/images/select-image.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
+  -webkit-appearance: none;
 }
 
 .hotel-on-page-list:focus {
