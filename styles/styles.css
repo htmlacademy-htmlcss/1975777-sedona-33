@@ -910,7 +910,7 @@ body {
   line-height: 23px;
 }
 
-.range-input{
+.range-input {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -1192,7 +1192,6 @@ body {
 
 .product-card-hotel:focus {
   outline: 3px solid #83b3d3;
-
 }
 
 .product-card-hotel:active {
@@ -1826,4 +1825,21 @@ body {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+/*  проверка на кроссбраузерность*/
+
+input::-webkit-outer-spin-button, /*input number Safari hide arrows*/
+input::-webkit-inner-spin-button [type="text"] {
+  display: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, /*input number Mozilla Firefox hide arrows*/
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
 }
