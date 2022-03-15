@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
 
@@ -97,7 +98,7 @@
       <section class="services">
         <h3 class="visually-hidden">Сервис</h3>
         <ul class="services-list">
-          <li class="services-item">
+          <li class="services-item background-blue-light">
             <img class="services-image" src="images/home.svg" width="75" height="72" alt="Иконка жилья">
             <h3 class="services-title">Жилье</h3>
             <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
@@ -108,7 +109,7 @@
             <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
             </p>
           </li>
-          <li class="services-item">
+          <li class="services-item background-blue-light">
             <img class="services-image" src="images/present.svg" width="64" height="76" alt="Иконка сувениры">
             <h3 class="services-title">Сувениры</h3>
             <p class="services-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
@@ -131,24 +132,24 @@
         </ul>
       </section>
 
-      <!-- Блог сервиса 2 -->
-      <section class="services">
-        <h3 class="visually-hidden">Сервис</h3>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3 class="services-title">Небольшая<br> площадь</h3>
-            <p class="services-description">— №3 —</p>
-            <p class="services-description">Все достопримечательности<br> находятся очень близко</p>
+      <!-- Блог преимуществ 3-->
+      <section class="advantages">
+        <h3 class="visually-hidden">Преимущества</h3>
+        <ul class="advantages-list">
+          <li class="advantages-item background-blue-light">
+            <h3 class="advantages-title">Небольшая<br> площадь</h3>
+            <p class="advantages-description">— №3 —</p>
+            <p class="advantages-description">Все достопримечательности<br> находятся очень близко</p>
           </li>
-          <li class="services-item background-blue">
-            <h3 class="services-title ">Красивая<br> дорога</h3>
-            <p class="services-description">— №4 —</p>
-            <p class="services-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          <li class="advantages-item background-blue">
+            <h3 class="advantages-title ">Красивая<br> дорога</h3>
+            <p class="advantages-description">— №4 —</p>
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
-          <li class="services-item">
-            <h3 class="services-title">Мало<br> туристов</h3>
-            <p class="services-description">— №5 —</p>
-            <p class="services-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+          <li class="advantages-item background-blue-light">
+            <h3 class="advantages-title">Мало<br> туристов</h3>
+            <p class="advantages-description">— №5 —</p>
+            <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -249,15 +250,15 @@
           <p class="field-group">
             <label class="modal-label" for="arrival-date">Дата заезда:</label>
             <input class="search-hotels-form-field" type="text" id="arrival-date" name="arrival-date"
-              placeholder="Укажите дату" value="27 апреля 2020">
-          <p class="footnote-arrival-date"> Мы не можем отправить вас в прошлое. </p>
+              placeholder="Укажите дату" value="27 апреля 2020" required>
+            <p class="footnote-arrival-date"> Мы не можем отправить вас в прошлое. </p>
           </p>
 
           <p class="field-group">
             <label class="modal-label" for="departure-date">Дата выезда:</label>
             <input class="search-hotels-form-field" type="text" id="departure-date" name="departure-date"
-              placeholder="Укажите дату" value="1 сентября 2021">
-          <p class="footnote-departure-date">На эти даты есть свободные номера. Пока есть.</p>
+              placeholder="Укажите дату" value="1 сентября 2021" required>
+            <p class="footnote-departure-date">На эти даты есть свободные номера. Пока есть.</p>
           </p>
 
           <div class="field-group-people">
