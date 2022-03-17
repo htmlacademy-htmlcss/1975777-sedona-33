@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -228,7 +228,7 @@ body {
 
 .welcome-page {
   padding-top: 51px;
-  background-image: url("/images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ body {
 
   color: #ffffff;
   background-color: #000000;
-  background-image: url("/images/background-footer.jpg");
+  background-image: url("../images/background-footer.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -677,7 +677,7 @@ body {
   text-align: center;
 }
 .background-catalog {
-  background-image: url("/images/catalog-background.jpg");
+  background-image: url("../images/catalog-background.jpg");
   background-color: #000000;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -738,7 +738,7 @@ body {
 
 .breadcrumbs-next {
   width: 6px;
-  background-image: url(/images/bread-crumbs.svg);
+  background-image: url(../images/bread-crumbs.svg);
   background-repeat: no-repeat;
   background-size: 5px 8px;
   background-position: center;
@@ -828,7 +828,7 @@ body {
   content: "";
   height: 20px;
   width: 20px;
-  background-image: url("/images/tick.svg");
+  background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1117,7 +1117,7 @@ body {
   line-height: 23px;
   color: #333333;
   appearance: none;
-  background-image: url(/images/select-image.svg);
+  background-image: url(../images/select-image.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
   -webkit-appearance: none;
@@ -1517,7 +1517,7 @@ body {
   line-height: 23px;
   text-align: left;
   appearance: none;
-  background-image: url(/images/select-image.svg);
+  background-image: url(../images/select-image.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
   -webkit-appearance: none;
@@ -1660,7 +1660,7 @@ body {
   font-weight: 700;
   line-height: 40px;
   text-align: left;
-  background-image: url("/images/calendar.svg");
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 19px;
 }
