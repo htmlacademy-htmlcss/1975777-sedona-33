@@ -832,14 +832,6 @@ body {
   justify-content: space-between;
 }
 
-.filter-group-1 {
-  display: flex;
-}
-
-.filter-group-2 {
-  display: flex;
-}
-
 .catalog-filter {
   display: flex;
 }
@@ -958,6 +950,7 @@ body {
 .catalog-filter-group-price {
   width: 287px;
   margin-right: 81px;
+  margin-left: 98px;
 }
 
 .range-scale {
