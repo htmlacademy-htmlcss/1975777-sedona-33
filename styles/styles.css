@@ -200,6 +200,9 @@ body {
 }
 
 .button-navigation {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
   min-width: 160px;
   border: 3px transparent;
   font-size: 16px;
@@ -251,7 +254,7 @@ body {
   position: relative;
   padding-top: 51px;
   background-image: url("../images/index-background.jpg");
-  background-color: #87cefa;
+  background-color: #768693;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -491,7 +494,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   color: #ffffff;
-  background-color: #4682b4;
+  background-color: #556975;
   background-image: url("../images/background-footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -753,7 +756,7 @@ body {
 }
 .background-catalog {
   background-image: url("../images/catalog-background.jpg");
-  background-color: #5f9ea0;
+  background-color: #54606c;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -1297,7 +1300,7 @@ body {
 
 .product-card-image {
   display: block;
-  background-color: #4682b4;
+  background-color: #7c7168;
 }
 
 .product-card-title {
@@ -1434,20 +1437,20 @@ body {
 
 .button-rang {
   font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
   text-align: center;
   border: none;
   font-family: inherit;
   min-height: 37px;
   min-width: 160px;
   border-radius: 4px;
-  line-height: 37px;
+  line-height: 21px;
   font-weight: 400;
   background-color: #f2f2f2;
   color: #000000;
   outline: none;
   cursor: default;
+  box-sizing: border-box;
+  padding-top: 9px;
 }
 
 .rang {
@@ -1924,8 +1927,8 @@ body {
 
 .tooltip {
   position: absolute;
-  margin-top: 12.5px;
-  margin-left: 7px;
+  margin-top: 9.5px;
+  margin-left: 2px;
   width: 25px;
   height: 25px;
 }
