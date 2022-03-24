@@ -204,7 +204,7 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   min-width: 160px;
-  height: 37px;
+  align-self: flex-start;
   border: 3px transparent;
   font-size: 16px;
   font-weight: 700;
@@ -1608,7 +1608,7 @@ body {
   border-radius: 4px;
 }
 
-.pagination-item:active .button-pagination-link {
+ .button-pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
   outline: none;
